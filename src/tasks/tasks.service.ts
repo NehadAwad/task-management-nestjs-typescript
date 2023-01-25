@@ -23,7 +23,7 @@ export class TasksService {
         
         if(search) {
             tasks = tasks.filter(
-                (task) => task.title.includes(search) || task.description.includes(search);
+                task => task.title.includes(search) || task.description.includes(search)
             )
         }
 
